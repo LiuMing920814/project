@@ -7,6 +7,7 @@ range1.po <- which(spread.data$JACI <= 300)
 range2.po <- which(spread.data$JACI <= 400 & spread.data$JACI > 300)
 range3.po <- which(spread.data$JACI <= 1000 & spread.data$JACI > 400)
 
+sf
 spread.data$group <- rep(NA, nrow(spread.data))
 spread.data$group[range1.po] <- rep(1, length(range1.po))
 spread.data$group[range2.po] <- rep(2, length(range2.po))
